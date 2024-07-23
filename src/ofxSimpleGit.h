@@ -31,7 +31,7 @@ namespace ofxGit
 
         bool isRepository()
         {
-            ofFile file(ofFilePath.join(_path, ".git")));
+            ofFile file(ofFilePath::join(_path, ".git"));
             return file.exists();
         }
 
